@@ -1,0 +1,19 @@
+{
+  "name": "recipe1404",
+  "title": "Pho",
+  "date": "2013-09-03",
+  "description": "Pho (pronounced \"fuh\") is the most popular food in Vietnam, often eaten for breakfast, lunch and dinner. It is made from a special broth that simmers for several hours infused with exotic spices and served over rice noodles with fresh herbs.",
+  "images": [
+    "pho-1.png",
+    "pho-11.png",
+    "pho-3.jpg",
+    "pho-12.png"
+  ],
+  "ingredients": [
+    "water",
+    "noodles",
+    "salt",
+    "beef",
+    "scallions"
+  ]
+}
