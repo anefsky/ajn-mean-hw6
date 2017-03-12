@@ -3,13 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <title>Recipes</title>
-<script src="https://code.angularjs.org/1.6.2/angular.min.js"></script>
-<script src="https://code.angularjs.org/1.6.2/angular-route.min.js"></script>
-<script src="js/foodapp.module.js"></script>
-<script src="js/foodapp.config.js"></script>
-<script src="js/recipes/recipe-list.component.js"></script>
-<script src="js/reviews/reviews-list.component.js"></script>
-<script src="/js/recipes/recipe-detail.component.js"></script>
+  <script src="https://code.angularjs.org/1.6.2/angular.js"></script>
+  <script src="https://code.angularjs.org/1.6.2/angular-route.js"></script>
+  <script src="https://code.angularjs.org/1.6.2/angular-animate.js"></script>
+  <script src="js/foodapp.module.js"></script>
+  <script src="js/foodapp.config.js"></script>
+  <script src="js/recipes/recipe-list.component.js"></script>
+  <script src="js/reviews/reviews-list.component.js"></script>
+  <script src="/js/recipes/recipe-detail.component.js"></script>
 
 
   <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
@@ -17,34 +18,34 @@
   <base href="/" >
 </head>
 <body ng-app="foodApp">
-<body>
+  <body>
 
-  <nav>
-    <div class="panels">
-      <div class="panel panel1 active">
-        <a href="/">Home</a>
+    <nav>
+      <div class="panels">
+        <div class="panel panel1 active">
+          <a href="/">Home</a>
+        </div>
+        <div class="panel panel2">
+          <a href="/recipes">Recipes</a>
+        </div>
+        <div class="panel panel3">
+          <a href="/reviews">Reviews</a>
+        </div>
+        <div class="panel panel4">
+          <a href="/delivery">Delivery</a>
+        </div>
+        <div class="panel panel5">
+          <a href="/about">About</a>
+        </div>
       </div>
-      <div class="panel panel2">
-        <a href="/recipes">Recipes</a>
-      </div>
-      <div class="panel panel3">
-        <a href="/reviews">Reviews</a>
-      </div>
-      <div class="panel panel4">
-        <a href="/delivery">Delivery</a>
-      </div>
-      <div class="panel panel5">
-        <a href="/about">About</a>
-      </div>
-    </div>
-  </nav>
+    </nav>
 
-<div ng-view></div>
+    <div class="page {{ pageClass }}" ng-view></div>
 
-<script src="js/scripts.js"></script>
+    <script src="js/scripts.js"></script>
 
-</body>
-</html>
+  </body>
+  </html>
 
 
 
