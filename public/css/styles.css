@@ -12,6 +12,16 @@ body {
   margin: 0;
   background: linear-gradient(45deg, #5392c6 0%, rgba(255, 26, 102, 0) 70%), linear-gradient(135deg, #3958c6 10%, rgba(6, 67, 249, 0) 80%), linear-gradient(225deg, #33ccc2 10%, rgba(13, 242, 89, 0) 80%), linear-gradient(315deg, #cb4dbd 100%, rgba(249, 158, 31, 0) 70%); }
 
+.highlight {
+  transition: all 0.2s;
+  position: absolute;
+  top: 0;
+  background: rgba(255, 255, 255, 0.2);
+  left: 0;
+  z-index: 1;
+  display: block;
+  pointer-events: none; }
+
 nav {
   height: 6rem; }
 
@@ -180,15 +190,5 @@ nav {
   to {
     transform: translateZ(-3000px) rotateZ(360deg);
     opacity: 0; } }
-
-.highlight {
-  transition: all 0.2s;
-  position: absolute;
-  top: 0;
-  background: rgba(255, 255, 255, 0.2);
-  left: 0;
-  z-index: 1;
-  display: block;
-  pointer-events: none; }
 
 /*# sourceMappingURL=styles.css.map */

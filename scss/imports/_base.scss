@@ -16,3 +16,14 @@ body {
   linear-gradient(225deg, hsl(176, 60%, 50%) 10%, hsla(140, 90%, 50%, 0) 80%), 
   linear-gradient(315deg, hsl(307, 55%, 55%) 100%, hsla(35, 95%, 55%, 0) 70%);
 }
+
+.highlight {
+  transition: all 0.2s;
+  position: absolute;
+  top: 0;
+  background: rgba(255,255,255,0.2);
+  left: 0;
+  z-index: 1;
+  display: block;
+  pointer-events: none 
+}
