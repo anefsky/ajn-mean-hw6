@@ -27,3 +27,9 @@ body {
   display: block;
   pointer-events: none 
 }
+
+.controls {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}

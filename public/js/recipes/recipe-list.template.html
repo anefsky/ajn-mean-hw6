@@ -1,6 +1,18 @@
 <div class="wrap">
+	<div class="controls">
+		<div class="search-control">
+			Search: <input ng-model="$ctrl.query" />
+		</div>
+		<div class="sort-controls">
+			Sort by:
+			<select ng-model="$ctrl.orderProp">
+				<option value="title">Alphabetical</option>
+				<option value="date">Newest</option>
+			</select>
+		</div>
+	</div>
 	<ul>
-		<li ng-repeat="recipe in $ctrl.recipes">
+		<li ng-repeat="recipe in $ctrl.recipes | filter:$ctrl.query | orderBy:$ctrl.orderProp">
 			<img ng-src="img/home/{{ recipe.image }}" />
 			<div>
 				<h1><a href="recipes/{{ recipe.name }} ">{{ recipe.title }}</a></h1>
